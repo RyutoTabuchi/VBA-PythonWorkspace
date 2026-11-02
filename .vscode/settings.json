@@ -1,0 +1,12 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "Python/Project pdf-To-Md",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/Python/Project pdf-To-Md/venv/Scripts/python.exe",
+    "git.autoRepositoryDetection": true,
+    "git.repositoryScanMaxDepth": 2
+}
