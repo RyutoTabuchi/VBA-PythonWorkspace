@@ -5,6 +5,7 @@
 - Scaffold only VBA-Python projects from `Projects/_Template_Combined`, always including both `Pysource/` and `VBsource/`. Do not add single-language creation modes or project-type selection.
 - Follow the conventions of the project being changed. Keep changes focused on the request, readable, and consistent with nearby code.
 - Before editing, read the README for the target project and inspect relevant source, configuration, and tests. Read other projects' READMEs only when the task spans those projects or shared behavior.
+- When answering a question about either `VBsource/` or `Pysource/`, inspect both directories in the target project before responding. Trace relevant VBA-Python interactions across both sides when applicable, and state clearly when either directory or the relevant source is unavailable.
 - Use `Pysource/` for Python, `VBsource/<workbook name>/` for exported VBA, and `Sandbox/` for prototypes. Preserve these exact names. Do not mix unverified prototypes with production exports or imply that prototype code is already deployed.
 - Keep one Git repository at the project root. Do not create nested repositories or restructure projects unless requested or necessary for the task.
 - Keep shared tools and standard VS Code tasks at the workspace root. Normally work with the whole workspace open; nested project `.vscode/settings.json` files do not configure the parent workspace. Follow project-specific interpreter and dependency requirements rather than assuming all projects use the same environment.
@@ -57,6 +58,6 @@ Apply these rules when creating or changing Python source, including prototypes.
 
 - Before investigating a concrete problem, search existing reports for the target project and relevant shared area. Check `Defects/` and `Maintenance/` subfolders when present. Verify historical guidance against current code, workbooks, configuration, and environment rather than applying it blindly.
 - Once a concrete problem is fixed and verified, record the confirmed cause, resolution, and validation in the appropriate report. Check for the same root cause first; add a dated note when a recurrence adds useful information instead of duplicating or replacing history. Clearly label guesses and unverified results.
-- For report creation, organization, updates, or investigation summaries, follow [Report Writing Rules.instructions.md](instructions/Report%20Writing%20Rules.instructions.md). Do not relocate or rename existing reports merely to apply the new rules.
+- For report creation, organization, updates, or investigation summaries, follow the instruction file `instructions/Report Writing Rules.instructions.md`. Do not relocate or rename existing reports merely to apply the new rules.
 
 These English-language instructions are the authoritative workspace guidance for Copilot.
