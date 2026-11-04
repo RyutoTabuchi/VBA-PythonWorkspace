@@ -1,7 +1,13 @@
 # Project実体は各Project repoで管理する
 Project */
-.tools/UserFormCsvExporter/UserFormCsvExporter.xlam
-ExcelVBE/.tools/UserFormCsvExporter/UserFormCsvExporter.xlam
+
+# Excelファイルは原則Git管理から除外
+*.xlam
+*.xlsx
+# UserForm CSV出力用アドインは例外としてGit管理
+!.tools/UserFormCsvExporter/UserFormCsvExporter.xlam
+# Excelへのアドイン登録は不要（出力スクリプトが実行時のみ読み込む）
 
 # サンプルデータはGit管理しない
-SampleDatas/
+/SampleDatas/*
+!/SampleDatas/.gitkeep
